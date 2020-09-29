@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B2FF155F-2B7A-48FE-8DE1-621639D82352}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BSCITATTENDENCE</RootNamespace>
+    <AssemblyName>BSCITATTENDENCE</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Speech">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddingStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddingStudents.Designer.cs">
+      <DependentUpon>AddingStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminAttendence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAttendence.Designer.cs">
+      <DependentUpon>AdminAttendence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSection.Designer.cs">
+      <DependentUpon>AdminSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminStudentView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminStudentView.Designer.cs">
+      <DependentUpon>AdminStudentView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="attendencemenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="attendencemenu.Designer.cs">
+      <DependentUpon>attendencemenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendencePercentage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttendencePercentage.Designer.cs">
+      <DependentUpon>AttendencePercentage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendencePercentagePerYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttendencePercentagePerYear.Designer.cs">
+      <DependentUpon>AttendencePercentagePerYear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendenceRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttendenceRecord.Designer.cs">
+      <DependentUpon>AttendenceRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassYearlyAttendence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassYearlyAttendence.Designer.cs">
+      <DependentUpon>ClassYearlyAttendence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data Class Attendence Per Year.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data Class Attendence Per Year.Designer.cs">
+      <DependentUpon>Data Class Attendence Per Year.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataAttendencePercentage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataAttendencePercentage.Designer.cs">
+      <DependentUpon>DataAttendencePercentage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataStaffandAdminAttendence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataStaffandAdminAttendence.Designer.cs">
+      <DependentUpon>DataStaffandAdminAttendence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataStudentYearlyAttendencePercentage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataStudentYearlyAttendencePercentage.Designer.cs">
+      <DependentUpon>DataStudentYearlyAttendencePercentage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataView.Designer.cs">
+      <DependentUpon>DataView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteAllData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteAllData.Designer.cs">
+      <DependentUpon>DeleteAllData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DGVPrinter.cs" />
+    <Compile Include="FORGOTPASSWORD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORGOTPASSWORD.Designer.cs">
+      <DependentUpon>FORGOTPASSWORD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INSERTATTENDENCE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INSERTATTENDENCE.Designer.cs">
+      <DependentUpon>INSERTATTENDENCE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingScreen.Designer.cs">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginapprovalandstaffupdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginapprovalandstaffupdate.Designer.cs">
+      <DependentUpon>loginapprovalandstaffupdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginHistory.Designer.cs">
+      <DependentUpon>LoginHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MANAGEATTENDENCE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MANAGEATTENDENCE.Designer.cs">
+      <DependentUpon>MANAGEATTENDENCE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menunew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menunew.Designer.cs">
+      <DependentUpon>menunew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddingStudents.resx">
+      <DependentUpon>AddingStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminAttendence.resx">
+      <DependentUpon>AdminAttendence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSection.resx">
+      <DependentUpon>AdminSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminStudentView.resx">
+      <DependentUpon>AdminStudentView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="attendencemenu.resx">
+      <DependentUpon>attendencemenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttendencePercentage.resx">
+      <DependentUpon>AttendencePercentage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttendencePercentagePerYear.resx">
+      <DependentUpon>AttendencePercentagePerYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttendenceRecord.resx">
+      <DependentUpon>AttendenceRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassYearlyAttendence.resx">
+      <DependentUpon>ClassYearlyAttendence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data Class Attendence Per Year.resx">
+      <DependentUpon>Data Class Attendence Per Year.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataAttendencePercentage.resx">
+      <DependentUpon>DataAttendencePercentage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataStaffandAdminAttendence.resx">
+      <DependentUpon>DataStaffandAdminAttendence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataStudentYearlyAttendencePercentage.resx">
+      <DependentUpon>DataStudentYearlyAttendencePercentage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataView.resx">
+      <DependentUpon>DataView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteAllData.resx">
+      <DependentUpon>DeleteAllData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORGOTPASSWORD.resx">
+      <DependentUpon>FORGOTPASSWORD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INSERTATTENDENCE.resx">
+      <DependentUpon>INSERTATTENDENCE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingScreen.resx">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginapprovalandstaffupdate.resx">
+      <DependentUpon>loginapprovalandstaffupdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginHistory.resx">
+      <DependentUpon>LoginHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MANAGEATTENDENCE.resx">
+      <DependentUpon>MANAGEATTENDENCE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menunew.resx">
+      <DependentUpon>menunew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SIGNUP.resx">
+      <DependentUpon>SIGNUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffAttendence.resx">
+      <DependentUpon>StaffAttendence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffDetails.resx">
+      <DependentUpon>StaffDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentAttendencePerYear.resx">
+      <DependentUpon>StudentAttendencePerYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentAttendenceRecord.resx">
+      <DependentUpon>StudentAttendenceRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentMonthlyAttendence.resx">
+      <DependentUpon>StudentMonthlyAttendence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentsView.resx">
+      <DependentUpon>StudentsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentYearlyAttendence.resx">
+      <DependentUpon>StudentYearlyAttendence.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SIGNUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SIGNUP.Designer.cs">
+      <DependentUpon>SIGNUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffAttendence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffAttendence.Designer.cs">
+      <DependentUpon>StaffAttendence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffDetails.Designer.cs">
+      <DependentUpon>StaffDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentAttendencePerYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentAttendencePerYear.Designer.cs">
+      <DependentUpon>StudentAttendencePerYear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentAttendenceRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentAttendenceRecord.Designer.cs">
+      <DependentUpon>StudentAttendenceRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentMonthlyAttendence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentMonthlyAttendence.Designer.cs">
+      <DependentUpon>StudentMonthlyAttendence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentsView.Designer.cs">
+      <DependentUpon>StudentsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentYearlyAttendence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentYearlyAttendence.Designer.cs">
+      <DependentUpon>StudentYearlyAttendence.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
